@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV de Shirin Rahman, Desarrolladora Front-end Junior, UX/UI y QA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Shirin Rahman · Front-end · UX/UI · QA</title>
+</head>
+<body>
+  <a class="skip-link" href="#perfil">Ir al contenido</a>
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+  <header class="header">
+    <a class="logo" href="#inicio">SHIRIN <span>RAHMAN</span></a>
+    <nav id="primary-nav" aria-label="Secciones del currículum">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
+      <a href="#habilidades">Competencias</a>
+      <a href="#proyectos">Proyectos</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+        <span aria-hidden="true">◐</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio" class="cv-container">
+    <section class="intro-card">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="code-panel" aria-hidden="true">
+        <div class="code-panel-header"><span></span><span></span><span></span></div>
+        <pre id="code-typing"></pre>
+      </div>
+      <p class="kicker">DESARROLLADORA WEB</p>
+      <h1>Shirin<br>Rahman</h1>
+      <p class="role">Front-end Junior <span>·</span> UX/UI <span>·</span> QA</p>
+      <div class="hero-tags" aria-label="Áreas profesionales"><span>HTML · CSS · JS</span><span>DISEÑO CENTRADO EN USUARIO</span><span>CALIDAD DIGITAL</span></div>
+      <div class="talent-showcase" id="talent-showcase" aria-label="Talentos principales">
+        <p class="talent-heading">Mis talentos</p>
+        <div class="talent-core">
+          <span class="talent-eyebrow" id="talent-eyebrow"></span>
+          <strong id="talent-title"></strong>
+          <p id="talent-copy"></p>
+          <div class="talent-points" id="talent-points" aria-label="Puntos clave"></div>
+        </div>
+        <div class="talent-nodes" id="talent-nodes"></div>
+      </div>
+      <p class="intro-summary" id="hero-summary"></p>
+      <div class="contact-data">
+        <span>Barcelona, España</span><span>+34 632 310 729</span>
+        <a href="mailto:shirin.rmn@gmail.com">shirin.rmn@gmail.com</a>
+        <a href="https://linkedin.com/in/shirinrahman" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+      <div class="hero-actions">
+        <a class="button-link" href="#proyectos">Ver proyectos</a>
+        <button class="print-button" id="print-cv" type="button">Imprimir CV</button>
+      </div>
+      <div class="hero-bottom"><p class="availability"><span></span><b id="availability"></b></p><p class="hero-index" aria-hidden="true">01 / 05</p></div>
+    </section>
+
+    <section class="cv-section" id="perfil">
+      <div class="section-title"><span>01</span><h2>Perfil profesional</h2></div>
+      <div class="section-body"><p class="lead" id="profile-text"></p><div class="facts" id="facts"></div></div>
+    </section>
+
+    <section class="cv-section" id="experiencia">
+      <div class="section-title"><span>02</span><h2>Experiencia profesional</h2></div>
+      <div class="section-body"><p class="helper">Trayectoria reciente en desarrollo front-end, experiencia de usuario y control de calidad digital.</p><div class="timeline" id="timeline"></div></div>
+    </section>
+
+    <section class="cv-section" id="formacion">
+      <div class="section-title"><span>03</span><h2>Formación</h2></div>
+      <div class="section-body education-list">
+        <article><p class="education-date">2026 · EN CURSO</p><h3>Certificado de Profesionalidad IFCD0110</h3><p>Confección y Publicación de Páginas Web · Centro de Estudios Politécnicos</p></article>
+        <article><p class="education-date">2019 — 2020</p><h3>Máster en UX/UI</h3><p>Nuclio Digital School · Barcelona</p></article>
+        <article><p class="education-date">2012 — 2015</p><h3>Máster en Diseño y Arquitectura</h3><p>Universidad IED</p></article>
+      </div>
+    </section>
+
+    <section class="cv-section" id="habilidades">
+      <div class="section-title"><span>04</span><h2>Competencias</h2></div>
+      <div class="section-body"><p class="helper">Tecnologías, herramientas y metodologías de trabajo.</p><div class="skills" id="skills"></div><div class="skills-chart" id="skills-chart" aria-label="Áreas de conocimiento"></div></div>
+    </section>
+
+    <section class="cv-section portfolio" id="proyectos">
+      <div class="section-title"><span>05</span><h2>Proyectos destacados</h2></div>
+      <div class="section-body"><p class="helper">Los proyectos publicados se abren en una pestaña nueva desde su botón.</p><div class="filters"><button class="filter active" data-filter="todos" type="button">Todos</button><button class="filter" data-filter="web" type="button">Web</button><button class="filter" data-filter="javascript" type="button">UX/UI · QA</button></div><div class="projects" id="projects"></div></div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <p class="kicker">CONTACTO</p><h2>¿Hablamos?</h2><p>Estoy disponible para oportunidades de desarrollo web, UX/UI y QA.</p>
+      <a class="contact-email" href="mailto:shirin.rmn@gmail.com">shirin.rmn@gmail.com <span>↗</span></a>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> SHIRIN RAHMAN · CV INTERACTIVO</footer>
+  <script src="cv.js"></script>
+</body>
+</html>
