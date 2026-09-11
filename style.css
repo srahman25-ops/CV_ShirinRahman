@@ -379,15 +379,14 @@ nav a.active {
   --my: 0px;
   --talent-accent: #9bd7d1;
   --talent-accent-soft: rgba(155, 215, 209, .18);
-  position: absolute;
-  top: clamp(8rem, 14vw, 10.8rem);
-  right: clamp(2rem, 6vw, 5rem);
+  position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(138px, .65fr);
   gap: .9rem;
-  width: min(46vw, 620px);
-  min-width: 460px;
+  width: min(100%, 760px);
+  min-width: 0;
+  margin-top: 2rem;
   padding: .95rem;
   border: 1px solid rgba(151, 203, 240, .26);
   border-radius: 8px;
@@ -1296,11 +1295,7 @@ footer {
   }
 
   .talent-showcase {
-    position: relative;
-    top: auto;
-    right: auto;
     width: min(100%, 560px);
-    min-width: 0;
     margin: 2rem 0 0;
   }
 }
